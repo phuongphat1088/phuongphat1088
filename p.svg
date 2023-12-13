@@ -8,9 +8,12 @@
         }
     
         @keyframes color-change {
-          0% { color: red; }
-          50% { color: blue; }
-          100% { color: green; }
+          from {
+        color: red;
+          }
+        to {
+        color: green;
+        }
         }
       </style>
       <h1>P</h1>
