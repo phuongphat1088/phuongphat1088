@@ -1,19 +1,24 @@
-<svg fill="none" viewBox="0 0 400 400" width="400" height="400" xmlns="http://www.w3.org/2000/svg">
-  <foreignObject width="100%" height="100%">
-    <div xmlns="http://www.w3.org/1999/xhtml">
-      <style>
-        h1 {
-          color: red;
-          animation: color-change 2s infinite;
-        }
-    
-        @keyframes color-change {
-          0% { color: red; }
-          50% { color: blue; }
-          100% { color: green; }
-        }
-      </style>
-      <h1>P</h1>
-    </div>
-  </foreignObject>
+<svg width="100" height="100" viewBox="0 0 100 100">
+  <text x="50" y="60" text-anchor="middle" fill="#ff0000" font-size="60px">P</text>  
 </svg>
+
+<style>
+@keyframes color-change {
+  0% {
+    fill: #ff0000; 
+  }
+  33% {
+    fill: #0000ff;
+  }
+  66% { 
+    fill: #00ff00;
+  }
+  100% {
+    fill: #ff0000;  
+  }
+}
+
+svg text {
+  animation: color-change 3s infinite;  
+}
+</style>
